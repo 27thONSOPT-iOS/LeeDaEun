@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="e9E-Ym-031">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Music Info View Controller-->
+        <scene sceneID="s1h-Wf-Ysu">
+            <objects>
+                <viewController storyboardIdentifier="MusicInfoViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="e9E-Ym-031" customClass="MusicInfoViewController" customModule="SOPT_iOS_3rd_Seminar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NNF-9H-1DK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="USE-j7-ic7">
+                                <rect key="frame" x="186" y="177" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bip-6i-lxE">
+                                <rect key="frame" x="87" y="264" width="240" height="240"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ud-7n-TBb">
+                                <rect key="frame" x="186" y="112" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="utn-aK-Vem"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="USE-j7-ic7" firstAttribute="centerX" secondItem="NNF-9H-1DK" secondAttribute="centerX" id="Lz2-9q-1Ju"/>
+                            <constraint firstItem="bip-6i-lxE" firstAttribute="centerX" secondItem="NNF-9H-1DK" secondAttribute="centerX" id="Qd5-Km-5f6"/>
+                            <constraint firstItem="utn-aK-Vem" firstAttribute="bottom" secondItem="bip-6i-lxE" secondAttribute="bottom" constant="358" id="fPD-Nw-kWp"/>
+                            <constraint firstItem="USE-j7-ic7" firstAttribute="top" secondItem="2ud-7n-TBb" secondAttribute="bottom" constant="44" id="fol-kl-Zlq"/>
+                            <constraint firstItem="2ud-7n-TBb" firstAttribute="centerX" secondItem="NNF-9H-1DK" secondAttribute="centerX" id="h36-yb-ecZ"/>
+                            <constraint firstItem="bip-6i-lxE" firstAttribute="leading" secondItem="utn-aK-Vem" secondAttribute="leading" constant="87" id="p1F-DL-Dfn"/>
+                            <constraint firstItem="bip-6i-lxE" firstAttribute="top" secondItem="USE-j7-ic7" secondAttribute="bottom" constant="66" id="ssy-Xd-Fls"/>
+                            <constraint firstItem="2ud-7n-TBb" firstAttribute="top" secondItem="utn-aK-Vem" secondAttribute="top" constant="68" id="vDn-sB-Dot"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="bip-6i-lxE" id="6Hw-0Q-zCM"/>
+                        <outlet property="singerLabel" destination="USE-j7-ic7" id="mWU-GH-qmb"/>
+                        <outlet property="titleLabel" destination="2ud-7n-TBb" id="j5Z-3M-dul"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yRn-4X-mTb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-268.1159420289855" y="64.955357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
