@@ -118,6 +118,8 @@
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="150" height="225"/>
                                         <connections>
+                                            <outlet property="descriptionLabel" destination="q3b-zy-6SO" id="BfH-t9-QLA"/>
+                                            <outlet property="nameLabel" destination="MLS-HE-vJP" id="vMI-eo-GWL"/>
                                             <outlet property="partImageView" destination="m2o-aa-tsF" id="IzL-6o-8yf"/>
                                         </connections>
                                     </collectionViewCell>

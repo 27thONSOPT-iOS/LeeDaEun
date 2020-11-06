@@ -43,10 +43,11 @@ extension ViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PartBannerCell.identifier, for: indexPath) as? PartBannerCell else {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PartBannerCell.identifier, for: indexPath) as? PartBannerCell
+        else {
             return UICollectionViewCell()
         }
-        cell.setImage(imageName: profileData[indexPath.item].imageName)
+        cell.setImage(profile: profileData[indexPath.item])
         return cell
     }
     
