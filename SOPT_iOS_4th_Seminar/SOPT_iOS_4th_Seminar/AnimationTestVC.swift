@@ -22,38 +22,40 @@ class AnimationTestVC: UIViewController {
 
     @IBAction func touchUpStart(_ sender: Any) {
 //        UIView.animate(withDuration: 2.0, animations: {
-//            self.moonImageView.alpha = 0
+//            self.moonImageView.backgroundColor = .magenta
 //        })
 //
-//        UIView.animate(withDuration: 2.0, animations: {
-//            self.moonImageView.alpha = 0
-//            self.moonImageView.frame = CGRect(x: 0, y: 0, width: 200, height: 300)
-//        }) { (finish) in
-//            UIView.animate(withDuration: 1.0, animations: {
-//                self.moonImageView.alpha = 1
-//                self.initPosition()
+        UIView.animate(withDuration: 2.0, animations: {
+            self.moonImageView.alpha = 0
+            self.moonImageView.frame = CGRect(x: 0, y: 0, width: 200, height: 300)
+        }) { (finish) in
+            UIView.animate(withDuration: 1.0, animations: {
+                self.moonImageView.alpha = 1
+                self.initPosition()
+            })
+        }
 //            }) {(finished) in
 //                if finished {
 //                    print("finished")
 //                }
 //            }
 //        }
-//    }
+    }
         
         let scale = CGAffineTransform(scaleX: 0.5, y: 0.5)
         let rotate = CGAffineTransform(rotationAngle: .pi)
         let move = CGAffineTransform(translationX: 20, y: 300)
-        let combine = scale.concatenating(rotate).concatenating(move)
+//        let combine = scale.concatenating(rotate).concatenating(move)
     
-        UIView.animate(withDuration: 1.0, animations: {
-//            self.moonImageView.transform = CGAffineTransform(scaleX: 2.0, y: 0.5)
-//            self.moonImageView.transform = CGAffineTransform(translationX: 100, y: 300)
-//            self.moonImageView.transform = CGAffineTransform(rotationAngle: .pi / 2)
-            self.moonImageView.transform = combine
-        })  {finished in
-            UIView.animate(withDuration: 1.0) {
-                self.moonImageView.transform = .identity
-            }
-        }
+//        UIView.animate(withDuration: 1.0, animations: {
+////            self.moonImageView.transform = CGAffineTransform(scaleX: 2.0, y: 0.5)
+////            self.moonImageView.transform = CGAffineTransform(translationX: 100, y: 300)
+////            self.moonImageView.transform = CGAffineTransform(rotationAngle: .pi / 2)
+//            self.moonImageView.transform = combine
+//        })  {finished in
+//            UIView.animate(withDuration: 1.0) {
+//                self.moonImageView.transform = .identity
+//            }
+//        }
     }
-}
+//}
