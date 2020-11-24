@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sign UpVC-->
+        <scene sceneID="snF-Qu-Hcs">
+            <objects>
+                <viewController storyboardIdentifier="SignUpVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3V0-ci-Dlh" customClass="SignUpVC" customModule="SOPT_iOS_6th_Seminar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aWQ-SC-u5r">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이메일" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lm2-Yu-aOG">
+                                <rect key="frame" x="107" y="263" width="52" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="비밀번호" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6gH-0x-vum">
+                                <rect key="frame" x="89" y="338" width="70" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bwf-il-04c">
+                                <rect key="frame" x="175" y="258" width="150" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mKv-Xi-MOv">
+                                <rect key="frame" x="175" y="333" width="150" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xeu-SI-s1j">
+                                <rect key="frame" x="175" y="408" width="150" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AZQ-Hw-tyt">
+                                <rect key="frame" x="172" y="530" width="70" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="회원가입"/>
+                                <connections>
+                                    <action selector="TouchUpRegister:" destination="3V0-ci-Dlh" eventType="touchUpInside" id="S8B-nL-iWE"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X1h-zc-ghw">
+                                <rect key="frame" x="124" y="413" width="35" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gQY-nl-Bc8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6gH-0x-vum" firstAttribute="top" secondItem="lm2-Yu-aOG" secondAttribute="bottom" constant="51" id="0bd-xx-B34"/>
+                            <constraint firstItem="xeu-SI-s1j" firstAttribute="height" secondItem="mKv-Xi-MOv" secondAttribute="height" id="1xS-dm-DKx"/>
+                            <constraint firstItem="gQY-nl-Bc8" firstAttribute="bottom" secondItem="AZQ-Hw-tyt" secondAttribute="bottom" constant="296" id="5mt-MB-CdP"/>
+                            <constraint firstItem="6gH-0x-vum" firstAttribute="trailing" secondItem="lm2-Yu-aOG" secondAttribute="trailing" id="6z3-8v-joW"/>
+                            <constraint firstItem="mKv-Xi-MOv" firstAttribute="trailing" secondItem="Bwf-il-04c" secondAttribute="trailing" id="FBe-zW-AiL"/>
+                            <constraint firstItem="mKv-Xi-MOv" firstAttribute="top" secondItem="Bwf-il-04c" secondAttribute="bottom" constant="41" id="GfT-hj-W37"/>
+                            <constraint firstItem="xeu-SI-s1j" firstAttribute="trailing" secondItem="mKv-Xi-MOv" secondAttribute="trailing" id="OIG-FZ-bhI"/>
+                            <constraint firstItem="X1h-zc-ghw" firstAttribute="top" secondItem="6gH-0x-vum" secondAttribute="bottom" constant="51" id="Ske-CD-E69"/>
+                            <constraint firstItem="mKv-Xi-MOv" firstAttribute="leading" secondItem="Bwf-il-04c" secondAttribute="leading" id="TJ7-wo-bV4"/>
+                            <constraint firstItem="lm2-Yu-aOG" firstAttribute="top" secondItem="gQY-nl-Bc8" secondAttribute="top" constant="219" id="Udd-5c-g65"/>
+                            <constraint firstItem="xeu-SI-s1j" firstAttribute="top" secondItem="mKv-Xi-MOv" secondAttribute="bottom" constant="41" id="VkN-gv-Wxf"/>
+                            <constraint firstItem="gQY-nl-Bc8" firstAttribute="trailing" secondItem="Bwf-il-04c" secondAttribute="trailing" constant="89" id="X2b-l8-UfH"/>
+                            <constraint firstItem="xeu-SI-s1j" firstAttribute="leading" secondItem="mKv-Xi-MOv" secondAttribute="leading" id="XRY-XB-PBf"/>
+                            <constraint firstItem="xeu-SI-s1j" firstAttribute="width" secondItem="mKv-Xi-MOv" secondAttribute="width" id="Y8R-Uc-kWi"/>
+                            <constraint firstItem="mKv-Xi-MOv" firstAttribute="height" secondItem="Bwf-il-04c" secondAttribute="height" id="ZrH-wa-HLZ"/>
+                            <constraint firstItem="mKv-Xi-MOv" firstAttribute="width" secondItem="Bwf-il-04c" secondAttribute="width" id="auN-O9-rMk"/>
+                            <constraint firstItem="AZQ-Hw-tyt" firstAttribute="centerX" secondItem="aWQ-SC-u5r" secondAttribute="centerX" id="dpq-jh-Beh"/>
+                            <constraint firstItem="X1h-zc-ghw" firstAttribute="trailing" secondItem="6gH-0x-vum" secondAttribute="trailing" id="gcO-mo-vdz"/>
+                            <constraint firstItem="lm2-Yu-aOG" firstAttribute="leading" secondItem="gQY-nl-Bc8" secondAttribute="leading" constant="107" id="mK0-vB-ctD"/>
+                            <constraint firstItem="Bwf-il-04c" firstAttribute="leading" secondItem="lm2-Yu-aOG" secondAttribute="trailing" constant="16" id="nrB-OM-5h4"/>
+                            <constraint firstItem="Bwf-il-04c" firstAttribute="centerY" secondItem="lm2-Yu-aOG" secondAttribute="centerY" id="pd7-m8-gW2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="Bwf-il-04c" id="3UF-GY-zGR"/>
+                        <outlet property="nameTextfield" destination="xeu-SI-s1j" id="bJE-87-Wwm"/>
+                        <outlet property="passwordTextField" destination="mKv-Xi-MOv" id="l7o-04-P7m"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ucd-yA-gFq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-257.97101449275362" y="56.919642857142854"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
